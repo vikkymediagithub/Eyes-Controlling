@@ -1,0 +1,94 @@
+   body {
+        padding: 0;
+        margin: 0;
+        background-color: #f5d60e;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .container:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3em;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        background-color: #231f1e;
+      }
+      .eyes-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+                transform: scale(0.7);
+      }
+      .eyes-wrapper:before {
+        content: "";
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 26em;
+        height: 6em;
+        background-color: #a8a7ac;
+        z-index: -1;
+      }
+      .eye {
+        width: 10em;
+        height: 10em;
+        border: 15px solid #a6a4ad;
+        background-color: #ffffff;
+        border-radius: 50%;
+      }
+
+      .eyeball {
+        height: 3.2em;
+        width: 3.2em;
+        margin: 0.2em 3.5em;
+        background: -o-radial-gradient(#271e1e 35%, #935a29 37%);
+        background: radial-gradient(#271e1e 35%, #935a29 37%);
+        border-radius: 50%;
+        position: relative;
+      }
+      .eyeball:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 0.7em;
+        width: 0.5em;
+        border-radius: 50%;
+        top: 13px;
+        left: 13px;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+      a {
+        position: absolute;
+        display: block;
+        bottom: 30px;
+        background-color: #231f1e;
+        color: #ffffff;
+        padding: 15px 40px;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        border-radius: 5px;
+      }
